@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 public class FirstActivity extends Activity {
+    ///asdasdad
     Handler handler = new Handler();
     Runnable r = new Runnable() {
         @Override
