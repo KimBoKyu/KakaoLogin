@@ -23,7 +23,7 @@ import com.kakao.util.exception.KakaoException;
 import java.security.MessageDigest;
 
 public class MainActivity extends AppCompatActivity {
-
+    // test
     private SessionCallback mKakaocallback;
     // view
     private ImageButton login_button;
