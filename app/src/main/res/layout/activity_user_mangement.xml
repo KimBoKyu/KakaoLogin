@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMangement">
+
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="193dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="19dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/userPro"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPro"
+        tools:ignore="MissingConstraints"
+        tools:text="이름 적힐곳" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="488dp"
+        android:text="로그아웃"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/userPro"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars[2]" />
+    />
+
+
+</android.support.constraint.ConstraintLayout>

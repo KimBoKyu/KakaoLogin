@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a" />
+
+    <EditText
+        android:id="@+id/inp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="287dp"
+        android:ems="10"
+        android:hint="아이디를 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/inp_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_search_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        app:layout_constraintEnd_toStartOf="@+id/btn_search_pwd"
+        app:layout_constraintTop_toTopOf="@+id/btn_search_pwd" />
+
+    <Button
+        android:id="@+id/btn_search_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="비밀번호 찾기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inp_pwd"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        app:layout_constraintStart_toEndOf="@+id/btn_search_pwd"
+        app:layout_constraintTop_toTopOf="@+id/btn_search_pwd" />
+
+    <ImageButton
+        android:id="@+id/btn_kakao_login"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/btn_search_id"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search_pwd"
+        app:srcCompat="@drawable/katalkogin" />
+
+    <ImageButton
+        android:id="@+id/btn_naver_login"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/btn_kakao_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kakao_login"
+        app:srcCompat="@drawable/naverlogin" />
+
+    <ImageButton
+        android:id="@+id/btn_facebook_login"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/btn_naver_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_naver_login"
+        app:srcCompat="@drawable/facebooklogin" />
+
+</android.support.constraint.ConstraintLayout>
